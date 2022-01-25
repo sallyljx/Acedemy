@@ -1,0 +1,509 @@
+
+/*OVERALL*/
+
+/* Font size: 16px
+Font Family: "Open Sans", sans-serif;
+Font Color :  #515151
+ */
+
+    body{
+
+    font-size: 16px;
+    font-family:"Open Sans", sans-serif;
+    color: #515151;
+
+    }
+
+/* End of Overall */
+
+/* FRONT SIZE*/
+
+/* Desktop:
+
+H1: 30px
+H2: 28px
+H3: 26px
+H4: 24px
+H5: 22px
+ */
+
+    h1{font-size: 30px;}
+
+    h2{font-size: 28px;}
+
+    h3{font-size: 26px;}
+
+    h4{font-size: 24px;}
+
+    h5{font-size: 22px;}
+
+/* End of front-size */
+
+/* HEADER */
+
+    header{
+
+    display:flex;
+    height: 64px;
+    
+    }
+
+    .logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    margin-left: 24px;
+    
+    }
+
+    .desktop{
+
+    display:flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 24px;
+    
+    }
+
+/* 
+links: all padding=16px
+remove underline from the link
+ */
+
+    .desktop >a {
+
+    padding: 16px;
+    text-decoration:none;
+   
+    }
+
+    .mobile{
+
+    display: none;
+
+    }
+
+
+/* for mobile header */
+@media only screen and (max-width:720px){
+
+    .desktop, .logo, .s2-leftContent{
+    
+    display: none;
+
+    } 
+
+
+    .mobile{
+
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+
+    }
+
+    .section1, .section2{
+
+    flex-direction: column;
+
+    }
+
+    .section1 >img {
+
+    width: 60%;
+
+    }
+
+}
+
+/* End of Header */
+
+/* SECTION 1*/
+
+/* 
+ bg color = Grey
+ image - width =60%
+ padding - top & bottom = 32px , left & right =24px
+ */
+
+    .section1{
+
+    display: flex;
+    background-color: #8A97A8;
+    padding: 32px 24px;
+    width: 100%;
+    
+    }
+
+    .section1 > img {
+
+    width: 60%;
+        
+    }
+
+/* section 1 content
+ left padding =25px
+ align the text to center
+ */
+
+    .section1-content {
+
+    padding-left: 24px;
+    align-self: center;
+
+    }
+
+
+    .section1-content >a {
+
+    background-color: #3a3535;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    width: 50%;
+    display: block;
+    text-align: center;
+    padding: 8px 0px;
+    
+
+    }
+
+/* for mobile section 1 */
+@media only screen and (max-width:720px) {
+
+    .section2{
+
+    flex-direction: column;
+    padding: 0;
+    }
+
+    .section2 .container1{
+    
+    width: auto;
+    padding: 0;
+
+    }
+
+    .section2 .container2{
+
+    width: auto;
+    padding: 32px 16px;
+    }
+
+    .section2 >img{
+
+    width: 100%;
+
+    }
+
+
+}
+
+
+
+/*SECTION 2 */
+
+/* Section 2 left  */
+
+    .section2{
+
+    display: flex;
+    height: auto;
+
+    }
+
+    .section2 .container1 {
+
+    width: 60%;
+    padding: 32px 24px 32px 24px;
+
+    }
+
+/* Section 2 Right */
+
+    .section2 .container2{
+
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+    padding: 32px 0;
+
+    }
+
+    .s2-box{
+    flex-basis: 40%; 
+    display: flex;
+    border: 1px solid #8A97A8
+    
+    }    
+
+    .s2-box .s2-image{
+
+    display: flex;
+    padding: 16px;
+    width: 35%;
+    
+    }   
+
+
+    .s2-box .s2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 8px 32px;
+
+    }
+
+    #lecture{
+    background-color: #8A97A8;
+
+    }
+
+    .s2-content >a {
+
+    text-decoration:none;
+       
+    }
+
+@media only screen and (max-width: 720px) {
+       
+    .section2 .container1 {
+
+    display: none;
+
+    }
+      
+    .section2 .container2 {
+
+    width: 100%;
+
+    }
+      
+    .section2 .container2 .s2-image {
+
+    flex-direction: column;
+        
+    } 
+      
+    .section2 .s2-content {
+
+    padding: 16px;
+    }
+      
+}
+
+
+
+/* SECTION 3 */
+
+    .section3{
+   
+    background-color: grey;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column; 
+
+    }
+
+    .s3-top {
+
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
+
+    .s3-box-row {
+
+    display: flex;  
+
+    }
+
+    .s3-box {
+
+    flex-basis: 33%;
+    margin: 16px;
+    background-color: white;
+    
+    }
+
+    .s3-box .s3-content{
+
+    padding: 16px 16px 24px 16px;
+    }   
+
+    .s3box h3, .s3box h4{
+
+    padding-bottom: 8px;
+    }
+
+
+/* for mobile */
+
+@media only screen and (max-width: 720px){
+
+    .section3{
+    
+    padding: 24px 16px;
+        
+    }
+
+    .s3-box-row{
+
+    flex-direction: column;
+
+    }
+
+    .s3-box{
+
+    margin: 8px 0;
+    }
+
+    
+  .s3-box .s3-content {
+    background-color: grey;
+  }
+
+  .s3-content h3{
+    padding-bottom:10px ;
+  }
+
+  .s3-box .s3-image,
+  .s3-box h4,
+  .s3-box h5 {
+
+    display: none;
+  }
+
+
+}
+
+
+/* SECTION 4 */
+
+/* section 4 left */
+
+.section4{
+    margin: 32px 0;
+}
+
+.section4 h2{
+    padding: 8px 0;
+}
+
+
+.section4{
+    display: flex;
+    height: auto;
+    padding: 0 24px;
+    
+}
+
+.section4 .container4 {
+    width: 60%;
+    padding: 16px 24px 32px 0px;
+    
+}
+
+/* section 4 right */
+
+.section4 .container5{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+.s4-box{
+    flex-basis: 100%;
+    display: flex;
+} 
+
+.s4-image{
+
+    display: flex;
+    padding: 16px;
+    width: 35%;
+    
+}
+
+
+.s4-box .s4-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 0 12px 0 16px;
+
+}
+
+#fisma{
+    background-color: gray;
+}
+
+
+@media only screen and (max-width: 720px) {
+
+    .section4 h2,
+    .section4 h5,
+    .section4 .boxsection4 {
+      display: none;
+    }
+  
+    .section4{
+      padding-bottom: 24px;
+    }
+  
+    .section4 .s4-video {
+      width: 100%;
+      padding: 0;
+      margin-right: 0;
+    }
+
+  }
+
+/* FOOTER */
+
+    footer {
+    display: flex;
+    padding: 16px 24px;
+    color: gray;
+    }
+  
+    footer .copyright {
+    flex-grow: 1;
+    }
+  
+    footer a {
+    margin-right: 12px;
+    text-decoration: none;
+    }
+  
+    footer a:last-child {
+    margin-right: 0;
+    } 
+
+  
+@media only screen and (max-width: 720px) {
+    footer a {
+      display: none;
+    }
+  }
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
