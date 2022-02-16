@@ -1,4 +1,4 @@
-# Acedemy
+# Academy
 
 My First Web Assessment
 
